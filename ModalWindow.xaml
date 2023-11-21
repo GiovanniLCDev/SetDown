@@ -1,0 +1,26 @@
+﻿<Window x:Class="SetDown.ModalWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SetDown"
+        mc:Ignorable="d"
+        Title="Alert" WindowStyle="None" ResizeMode="NoResize" Focusable="False" WindowStartupLocation="Manual" Left="0" Top="0"
+        Height="128" Width="128" Background="Transparent"  AllowsTransparency="True" ShowInTaskbar="False">
+    <Grid>
+
+        <Button Click="Button_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="Transparent">
+                        <Image Source="assets/Alerticon.png"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+            <Button.Background>
+                <SolidColorBrush Color="Transparent"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
